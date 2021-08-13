@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="input-container">
+        <form action="">
+            <h1>Login Form</h1>
+            <div class="inputbox">
+                <input id="username" type="text" required="" autocomplete="off">
+                <span>Username</span>
+            </div>
+            <div class="inputbox">
+                <input id="password-field" type="password" required="">
+                <span>Password</span>
+                <div class="hide-show">
+                    <div id="show-password" class="icon"><i class="fas fa-eye"></i></div>
+                    <div id="hide-password" class="icon"><i class="fas fa-eye-slash"></i></div>
+                </div>
+            </div>
+            <div class="save-login">
+                <span>Remember</span>
+                <input onchange="saveLoginData()" id="save-login-checkbox" type="checkbox">
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
